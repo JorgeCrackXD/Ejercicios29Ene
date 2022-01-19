@@ -21,10 +21,10 @@ public class Main {
         System.out.println("BIENVENIDO");
         System.out.println("El premio total es de: $" + total);
         System.out.println("E independientemente del premio que usted tenga, se le cobran los siguientes impuestos:");
-        System.out.println("Impuesto 1: $" + rebaja1 + ", equivalente al 24.5% del premio total.");
-        System.out.println("Impuesto 2: $" + rebaja2 + ", equivalente al 15% del premio total.");
-        System.out.println("Impuesto 3: $" + rebaja3 + ", equivalente al 3% del premio total.");
-        System.out.println("/ln");
+        System.out.printf("Impuesto 1: $%.2f equivalente al 24.5\u0025% del premio total. \n", rebaja1);
+        //En printf, para imprimir el simbolo % y no recibir errores, escribir en cambio \u0025%
+        System.out.printf("Impuesto 2: $%.2f equivalente al 15\u0025% del premio total. \n", rebaja2);
+        System.out.printf("Impuesto 3: $%.2f equivalente al 3\u0025% ciento del premio total. \n", rebaja3);
         System.out.print("Ingrese el monto que gano usted: $");
         int ganado = lec.nextInt();
 
